@@ -38,7 +38,7 @@ https://www.trufflesuite.com/ganache
 4.	MetaMask浏览器插件
 https://metamask.io/
 
-注：  
+**注：**  
 （1）对于流拍的nft，同样需要owner进行认领；  
 （2）由于github文件数量限制，我不知道如何将node_modules中的文件上传上去，因此将通过zip的形式将完整的项目代码提交到您的邮箱。
 
