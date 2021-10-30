@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>login interface</title>
+    <style> 
+        body {
+          background:url("./images/blue.jfif")  no-repeat center center;   /*加载背景图*/   /* 背景图不平铺 */
+          background-size:cover;  /* 让背景图基于容器大小伸缩 */
+          background-attachment:fixed;        /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */   
+          background-color:#CCCCCC;   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+        }
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container" style="width: 650px; color:floralwhite; font-family:楷体">
+        <br><br><br><br>
+        <div class="row">
+            <h1 class="text-center">
+                NFT交易平台登录入口
+            </h1>
+            <p class="text-center">
+                （本平台配合MetaMask实现用户账户管理，在操作前需确保MetaMask与平台已连接）
+            </p>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <a class="text-center">
+                <button style="display:block;margin:0 auto" type="button" class="btn btn-primary" id="toRegister">新用户注册</button>
+            </a>
+        </div>
+        <br>
+
+        <div class="row">
+            <a class="text-center">
+                <button style="display:block;margin:0 auto" type="button" class="btn btn-primary" id="toLogin">老用户登录</button>
+            </a>
+        </div>
+        <br>
+        
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>center page</title>
+
+    <style> 
+        body {
+          background:url("./images/plants.jfif")  no-repeat center center;   /*加载背景图*/   /* 背景图不平铺 */
+          background-size:cover;  /* 让背景图基于容器大小伸缩 */
+          background-attachment:fixed;        /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */   
+          background-color:#CCCCCC;   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+        }
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container" style="width: 650px;">
+        <br><br>
+
+        <div class="row">
+            <h1 class="text-center" font style="font-family:楷体">
+                <b>___________个人中心___________</b>
+            </h1>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <span>
+                <b>账户地址：</b>
+            </span>
+            <span id="accountAddress">
+                <b>0xxxxxxxxx</b>
+            <span>
+        </div>
+
+        <div class="row">
+            <span>
+                <b>
+                    账户余额：
+                </b>
+            </span>
+            <span id="balance">
+                <b>
+                    0.00
+                </b>
+            </span>
+            <span>元</span>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <form class="form-inline" role="form">
+                <b>账户充值：</b>
+                <div class="form-group"> 
+                    <label class="sr-only" for="value">value</label>
+                    <input type="text" class="form-control" id="value" placeholder="请输入充值金额">
+                </div>
+                <button type="button" class="btn btn-primary" id="recharge">充值</button>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <form class="form-inline" role="form">
+                <span>
+                    <b>铸造NFT：</b>
+                    <div class="form-group"> 
+                        <input type="text" class="form-control" id="nftName" placeholder="请输入nft名字">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="mint">确认</button>
+                </span>
+                <br>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <form class="form-inline" role="form">
+                <span>
+                    <b>拍卖NFT：</b>
+                    <div class="form-group"> 
+                        <input type="text" class="form-control" id="nftAuction" placeholder="请输入NFT的ID" style="width:125px;">
+                        <input type="text" class="form-control" id="_duration" placeholder="请输入拍卖时间(min)" style="width:150px;">
+                        <input type="text" class="form-control" id="_floorPrice" placeholder="请输入拍卖底价" style="width:125px;">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="confirmAuction">确认</button>
+                </span>
+                <br>
+            </form>
+        </div>
+
+        <br>
+
+        <div>
+            <div class="row">   
+                <table class="table table-striped">
+                    <caption>
+                        NFT collections
+                    </caption>
+                    
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Id</th>
+                        <th>Infor</th>
+                        <th>状态</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="collections">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+        <br>
+        
+        <div class="row" align="center">
+            <a href="index.html">
+                <button type="button" class="btn btn-primary">返回登录界面</button>
+            </a>
+
+            <a href="mainpage.html">
+                <button type="button" class="btn btn-primary">返回主界面</button>
+            </a>
+
+        </div>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
